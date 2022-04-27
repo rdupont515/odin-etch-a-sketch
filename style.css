@@ -1,11 +1,15 @@
 /*Stylesheet*/
 
 #container{
-    position: relative;
-}
+    display: flex;
+    width: 16em;
+    height: auto;
+    flex-wrap: wrap;
+
+}/*creates 16x16 grid*/
 
 .square {
-    display: inline-block;
+    
     color: rgba(57, 7, 7, 0);
     width: 1em;
     height: 1em;
