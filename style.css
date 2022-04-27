@@ -5,17 +5,12 @@
     width: 16em;
     height: auto;
     flex-wrap: wrap;
-
 }/*creates 16x16 grid*/
 
 .square {
-    
     color: rgba(57, 7, 7, 0);
     width: 1em;
     height: 1em;
     background-color: lightblue;
-    position: relative;/*positions the squares next to each other*/
-    top: 50%;
-    transform: translateY(-50%);
   }
   
