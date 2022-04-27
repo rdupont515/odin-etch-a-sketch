@@ -10,7 +10,8 @@
     width: 1em;
     height: 1em;
     background-color: lightblue;
-    position: absolute;
+    position: relative;/*positions the squares next to each other*/
     top: 50%;
     transform: translateY(-50%);
   }
+  
