@@ -5,10 +5,10 @@ const container = document.querySelector('#container');
 const btn = document.querySelector('button');
 btn.addEventListener('click', (e) => {
     let n = parseInt(prompt('Please choose the number or squares per side.', "0"), 10);
-    if (n > 100) {
-        alert("Please choose a smaller number.");
-} //sets a limit on user input
-    else console.log(n);
+    console.log(n);
+    if ((n > 100) || (n < 0)) {
+        alert("Please choose a number between 0 and 100.");
+}//sets a limit on user input
 });//adds an event listener for button click
 
 for (let i = 0; i < 256; i++) {
