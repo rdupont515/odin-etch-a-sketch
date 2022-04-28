@@ -2,8 +2,8 @@
 
 #container{
     display: flex;
-    width: 16em;
-    height: auto;
+    width: 0;
+    height: 0;
     flex-wrap: wrap;
 }/*creates 16x16 grid*/
 

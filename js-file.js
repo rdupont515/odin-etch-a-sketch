@@ -4,20 +4,24 @@ const container = document.querySelector('#container');
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', (e) => {
-    let n = parseInt(prompt('Please choose the number or squares per side.', "0"), 10);
-    console.log(n);
-    if ((n > 100) || (n < 0)) {
-        alert("Please choose a number between 0 and 100.");
-}//sets a limit on user input
-});//adds an event listener for button click
+    let n = prompt('Please choose the number of squares per side.', "0");
+    document.getElementById('container').style.width = n + "em";//the value of user input is used to adjust the width
+    document.getElementById('container').style.height = n + "em";//the value of user input is used to adjust the height
+    
+    n = parseInt(n, 10);//converts the n string to a number for further use
+    
+    if ((n > 0) && (n <= 100)) {//tests the value of n
+        for (let a = 0; a < n; a++){
+        console.log(n);//for reference
+            for (i = 0; i < n; i++){//creates a grid
+                const square = document.createElement('div');
+                square.classList.add('square');
 
-for (let i = 0; i < 256; i++) {
-const square = document.createElement('div');
-square.classList.add('square');
-
-square.addEventListener('mouseenter', (e) => {
-   e.target.style.background = 'red';
-  });
-container.appendChild(square);
-}//creates 256 squares that change color when the mouse passes over them
-
+                square.addEventListener('mouseenter', (e) => {
+                    e.target.style.background = 'red';
+                });
+                container.appendChild(square);
+            }
+            }
+        };
+        })
