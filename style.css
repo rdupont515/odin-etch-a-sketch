@@ -1,11 +1,9 @@
 /*Stylesheet*/
 
-#container{
+.board{
+    width: 960px;
+    height: 960px;
     display: grid;
+    
 }
 
-.square {
-    
-    
-  }
-  
