@@ -5,7 +5,8 @@
     width: 0;
     height: 0;
     flex-wrap: wrap;
-}/*creates 16x16 grid*/
+    aspect-ratio: 1;
+}/*creates grid*/
 
 .square {
     color: rgba(57, 7, 7, 0);
