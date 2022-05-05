@@ -4,14 +4,27 @@
   <title>Page Title</title>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="style.css">
-  <script src="js-file.js" defer></script>
+  
 </head>
-<body>
-  <body>
-    <h1>
-      Etch-A-Sketch
-    </h1>
+    <body>
     
-    <div id="container"></div>
-  </body>
+      <div class="flex-container">
+          <div class="title"><h1>Etch-A-Sketch</h1></div>
+          <div class="content">
+            <div class="board"></div>
+          </div>
+          <div class="buttons">
+            <button>Black</button>
+            <button>White</button>
+            <button>Random</button>
+            <button>Reset</button>
+          </div>
+          <div>
+          <input type="text" placeholder="Size of Board" value="16"/>
+          <button>Set Size</button>
+        </div>
+      </div>
+
+    </body>
+  <script src="js-file.js" defer></script>
 </html>
